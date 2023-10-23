@@ -14,6 +14,7 @@ class ThemeSwitcher {
     this.isDarkTheme = !this.isDarkTheme;
     this.setTheme(this.isDarkTheme);
     this.updateThemeButton();
+    this.showThemeChangeAlert(this.isDarkTheme);
   }
 
   updateThemeButton() {
