@@ -1,0 +1,290 @@
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar li:nth-child(1) a {
+  color: #8ec7ea; 
+}
+
+.navbar li:nth-child(2) a {
+  color: #aef5c2; 
+}
+
+.navbar li:nth-child(3) a {
+  color: #f0ed95; 
+}
+
+.navbar li:nth-child(4) a {
+  color: #fbb5d1; 
+}
+
+.button-container {
+  display: grid;
+  place-content: center; /
+}
+
+#load-contact-info {
+  padding: 10px 20px;
+  background-color: #7f8182;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#load-contact-info:hover {
+  background-color: #a3a8a9b3;
+}
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0; 
+}
+
+h2, p, h1{
+  text-align: center;
+}
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px;
+  border: 8px solid #ccc;
+}
+.skills table {
+  border-spacing: 1px; 
+  width: 100%; 
+}
+
+.skills th, .skills td {
+  padding: 7px; 
+  text-align: center; 
+}
+
+.programming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+  margin-bottom: 100px;
+}
+
+.form p{
+  margin: 60px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #7f8182;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #a3a8a9b3;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+  section {
+    margin-bottom: 300px;
+    display: grid;
+    gap: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  h2 {
+    font-size: 14px;
+  } 
+  p {
+    font-size: 14px;
+    line-height: 1.0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main img {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  section {
+    display: grid;
+    gap: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 375px; 
+  }
+  h1 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  section {
+    display: grid;
+    gap: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 375px; 
+  }
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  section {
+    display: grid;
+    gap: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 375px; 
+    
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

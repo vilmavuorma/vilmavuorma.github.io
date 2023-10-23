@@ -1,0 +1,13 @@
+body {
+    background-color: #000;
+    color: #fff; 
+}
+button {
+    background-color: #fff; 
+    color: #000; 
+}
+header {
+    background-color: #000;
+    color: #fff; 
+    padding: 20px;
+}

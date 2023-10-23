@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link id="theme" rel="stylesheet" href="light.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right">
+          <a id="theme">
+            <button id="change-theme">Change Theme</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section class="fade-in" id="home">
+    <h1>Hello, I'm Vilma Vuorma</h1>
+      <p>Second-year Information Technology student, majoring in Software Development.</p>
+        <img src="computer.jpg" alt="Computer" width="150" height="150"/>
+        <div class="button-container">
+      <button id="load-contact-info">Contact Info</button>
+    <div id="contact-info">
+  </div>
+</div>
+  </section>
+    <section class="fade-in" id="about">
+      <h1>About Me</h1>
+      <p>
+      Here you will find more information about me and my current skills in terms of software developing.
+    </p>
+      <p>
+        In programming, I'm interested in everything from software and hardware testing to backend and frontend development.
+      </p>
+    <p>
+      My work experience can be found at Nokia, where I was a Reliability Test Summer Trainee for five months last summer. The job description was RF hardware testing.
+    </p>
+      <section class="fade-in" id="skills">
+        <h1>My Skills</h1>
+          <div class="skills">
+            <table id="skills-table">
+            <tr>
+            <th>Programming Skills</th>
+            <th>Skill Level</th>
+          </tr>
+        <script>
+            programmingSkills.forEach(function (skill) {
+              document.write('<tr>');
+              document.write('<td>' + skill.name + '</td>');
+              document.write('<td>' + skill.level + '</td>');
+              document.write('</tr>');
+            });
+          </script>
+        </table>
+      </div>
+    </section>
+  </section>
+<section class="fade-in" id="projects">
+  <h1>Projects </h1>
+    <p>During studies, we have done a few projects as group work.</p>
+      <div class="programming">
+        <h2>Simon Game</h2>
+        <p>A memory game where you have to remember the sequence of flashing lights.</p>
+        <br>
+        <img src="simon.jpg" alt="Simon Game" width="450" height="300"/>
+      </div>
+      <br>
+      <div class="programming">
+        <h2>BankSimulator</h2>
+        <p>A functional bank simulator that includes the possibility to log in via the RFID card reader, 
+          display of account balances and account transactions, the possibility of transferring, depositing and 
+          withdrawing money and logging out.</p>
+          <br>
+          <img src="bank.jpg" alt="BankSimulator database" width="450" height="300"/>
+    </div>
+  </section>
+<section class="fade-in" id="contact">
+  <h1>Contact</h1>
+    <p>Feel free to contact me.</p>
+      <div class="form">
+        <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <textarea name="message" id="message" rows="4" placeholder="Your message"></textarea>
+        <br>
+        <input type="submit" value="Send">
+      </form>
+      <p>My email
+        <br>
+        <span id="email">vilmavuor@gmail.com </span><iconify-icon icon="logos:google-gmail"></iconify-icon></p>
+      <p>My GitHub<a id="github" href="#">
+        <br>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <body>
+          <i class="fa fa-github fa-5x"></i>
+        </body>
+      </div>
+  </section>
+</main>
+      <footer>
+        <p>Vilma Vuorma -  Information Technology student</p>
+      </footer>
+    <script src="code.js"></script>
+    <script src="themeSwitcher.js"></script>
+    <script src="animation.js"></script>
+    <script src="contactInfoFetcher.js"></script>
+    <script src="skillsTable.js"></script>
+    <script src="contactForm.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
