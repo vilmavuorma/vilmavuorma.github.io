@@ -26,6 +26,11 @@ class ThemeSwitcher {
     this.themeStylesheet.href = theme;
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
+
+  showThemeChangeAlert(isDark) {
+    const alertMessage = isDark ? "Switched to Dark Theme" : "Switched to Light Theme";
+    window.alert(alertMessage);
+  }
 }
 
   
