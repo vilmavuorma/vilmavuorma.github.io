@@ -1,6 +1,7 @@
 # "Portfolio" webpage
 
-Link for website: vilmavuorma.github.io
+[I'm an inline-style link with title](vilmavuorma.github.io "Link for the website")
+Link for the website: vilmavuorma.github.io
 
 Webpage includes
 
