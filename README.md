@@ -1,6 +1,6 @@
 # "Portfolio" webpage
 
-[Link for the website](https://vilmavuorma.github.io/)
+[Link for the webpage](https://vilmavuorma.github.io/)
 
 Webpage includes
 
